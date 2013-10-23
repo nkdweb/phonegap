@@ -1,0 +1,57 @@
+<!-- <history>
+============================================================================================================
+Filename    : index.html
+Author      : Dinesh N K @ Endeavour Software Technologies (P) Ltd.
+Date        : 05 Sep 2013
+Purpose     : This is the default application / Home page. 
+History     : 
+=============================================================================================================
+Sr. No.     Date          	Author          	Comments
+=============================================================================================================
+1.      	15 Oct 2013   	Dinesh N K       Initial Version
+=============================================================================================================
+</history> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App4U</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="css/kendo.mobile.all.min.css" rel="stylesheet" />
+	<link href="css/kendo.common.min.css" rel="stylesheet" />
+	<link href="css/kendo.default.min.css" rel="stylesheet" />
+	<link href="css/custom.css" rel="stylesheet" />
+	<link href="css/responsive.css" rel="stylesheet" />
+</head>
+<body>
+	<section id="home" data-role="view" data-title="Apps4U - Login">
+		<!-- Logo starts -->
+		<div id="appslogo">	</div>
+		<!-- Logo ends -->
+		
+		<!-- Login form starts -->
+		<div class="login_section">
+			<div class="login_msg">Please Login To Your Account</div>
+			<div class="login_form" data-use-native-scrolling="true">
+				<form action="profile.html">
+					<input type="text" value="" placeholder=" Username" class="app-textbox"/>        
+					<input type="password" value="" placeholder=" Password" class="app-textbox"/>        
+					<a class="button" id="login_btn" data-role="button" href="profile.html">Login</a>
+				</form>
+			</div>
+		</div>
+			<!--View content will render here-->
+        <footer data-role="footer">
+			<div class="footer_app">General Claims</div>
+		</footer>
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/kendo.all.min.js"></script>
+	<script>
+		var app = new kendo.mobile.Application();
+	</script>
+</body>
+</html>

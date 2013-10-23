@@ -1,0 +1,78 @@
+<!-- <history>
+============================================================================================================
+Filename    : profile.html
+Author      : Dinesh N K @ Endeavour Software Technologies (P) Ltd.
+Date        : 05 Sep 2013
+Purpose     : This is the personal details page. 
+History     : 
+=============================================================================================================
+Sr. No.     Date          	Author          	Comments
+=============================================================================================================
+1.      	17 Oct 2013   	Dinesh N K       Initial Version
+=============================================================================================================
+</history> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App4U - Personal Details</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="css/kendo.mobile.all.min.css" rel="stylesheet" />
+	<link href="css/kendo.common.min.css" rel="stylesheet" />
+	<link href="css/kendo.default.min.css" rel="stylesheet" />
+	<link href="css/custom.css" rel="stylesheet" />
+	<link href="css/responsive.css" rel="stylesheet" />
+</head>
+<body>
+	<section id="profile" data-role="view" data-title="Apps4U - Personal Details" >
+		<header data-role="header">
+            <div data-role="navbar">Personal Details</div>
+        </header>
+		<div data-role="drawer" id="my-drawer" data-position="right">
+			Hi!
+		</div>
+		<div data-role="details" id="detail-list" data-use-native-scrolling="true">
+		
+			<div data-role="view" data-use-native-scrolling="true">
+				<ul data-role="listview" data-click="app.homeLayout.navigate" class="pdetails">
+					<li data-target="" class="detail-lbl">Name</li>
+					<li data-target="" class="detail-value">Tan Run Yan</li>
+				</ul>
+				<ul data-role="listview" data-click="app.homeLayout.navigate" class="pdetails">
+					<li data-target="" class="detail-lbl">Personnal Number</li>
+					<li data-target="" class="detail-value">S123456</li>
+				</ul>
+				<ul data-role="listview" data-click="app.homeLayout.navigate" class="pdetails">
+					<li data-target="" class="detail-lbl">Subsidiary</li>
+					<li data-target="" class="detail-value">Lorem Ipsum is Simple</li>
+				</ul>
+				<ul data-role="listview" data-click="app.homeLayout.navigate" class="pdetails">
+					<li data-target="" class="detail-lbl">Department</li>
+					<li data-target="" class="detail-value">Wisi enim ad minim veniam</li>
+				</ul>
+				<ul data-role="listview" data-click="app.homeLayout.navigate" class="pdetails">
+					<li data-target="" class="detail-lbl">Division</li>
+					<li data-target="" class="detail-value">Accumsan et iutso</li>
+				</ul>
+				<ul data-role="listview" data-click="app.homeLayout.navigate" class="pdetails">
+					<li data-target="" class="detail-lbl">Branch</li>
+					<li data-target="" class="detail-value">Dynamics</li>
+				</ul>
+			</div>
+		</div>
+		<footer data-role="footer">
+            <div data-role="tabstrip">
+                <a href="#home">Home</a>        
+            </div> 
+        </footer>
+    </section>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/kendo.all.min.js"></script>
+	<script>
+		var app = new kendo.mobile.Application();
+	</script>
+</body>
+</html>

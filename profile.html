@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Details</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="css/kendo.mobile.all.min.css" rel="stylesheet" />
+	<link href="css/kendo.common.min.css" rel="stylesheet" />
+	<link href="css/kendo.default.min.css" rel="stylesheet" />
+	<link href="css/custom.css" rel="stylesheet" />
+	<link href="css/responsive.css" rel="stylesheet" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/kendo.all.min.js"></script>
+</head>
+<body>
+    <div data-role="view" id="drawer-home" data-layout="drawer-layout" data-title="Personal Details"> 
+		<ul data-role="listview" class="pdetails">
+			<li data-target="" class="detail-lbl">Name</li>
+			<li data-target="" class="detail-value">Tan Run Yan</li>
+		</ul>
+		<ul data-role="listview" class="pdetails">
+			<li data-target="" class="detail-lbl">Personnal Number</li>
+			<li data-target="" class="detail-value">S123456</li>
+		</ul>
+		<ul data-role="listview" class="pdetails">
+			<li data-target="" class="detail-lbl">Subsidiary</li>
+			<li data-target="" class="detail-value">Lorem Ipsum is Simple</li>
+		</ul>
+		<ul data-role="listview" class="pdetails">
+			<li data-target="" class="detail-lbl">Department</li>
+			<li data-target="" class="detail-value">Wisi enim ad minim veniam</li>
+		</ul>
+		<ul data-role="listview" class="pdetails">
+			<li data-target="" class="detail-lbl">Division</li>
+			<li data-target="" class="detail-value">Accumsan et iutso</li>
+		</ul>
+		<ul data-role="listview" class="pdetails">
+			<li data-target="" class="detail-lbl">Branch</li>
+			<li data-target="" class="detail-value">Dynamics</li>
+		</ul>
+	</div>
+
+<div data-role="view" id="drawer-starred" data-layout="drawer-layout" data-title="Starred Items">
+    <ul data-role="listview">
+        <li data-icon="star">Monday meeting</li>
+        <li data-icon="star">Regarding org chart changes</li>
+        <li data-icon="star">Re: Regarding org chart changes</li>
+        <li data-icon="star">Your Costume is ready</li>
+        <li data-icon="star">Out tonight?</li>
+    </ul>
+</div>
+
+<div data-role="view" id="drawer-drafts" data-layout="drawer-layout" data-title="Drafts">
+    <ul data-role="listview">
+        <li data-icon="compose">Re: Monday meeting</li>
+        <li data-icon="compose">Untitled message 1</li>
+        <li data-icon="compose">Untitled message 2</li>
+        <li data-icon="compose">Re: Regarding org chart changes</li>
+        <li data-icon="compose">Re: Re: Regarding org chart changes</li>
+        <li data-icon="compose">Re: Your Costume is ready</li>
+        <li data-icon="compose">Re: Out tonight?</li>
+        <li data-icon="compose">Untitled message 3</li>
+    </ul>
+</div>
+
+<div data-role="view" id="drawer-sent" data-layout="drawer-layout" data-title="Sent Items">
+    <ul data-role="listview">
+        <li>Build enterprise apps</li>
+        <li>Fw: Regarding Multiline textbox</li>
+        <li>Away next week</li>
+        <li>Fw: Your Costume is ready</li>
+        <li>Update completed</li>
+        <li>Survey</li>
+        <li>Problem with this account</li>
+        <li>Advice For Designers</li>
+        <li>Fw: Missing Book</li>
+        <li>Fun & useful reading</li>
+    </ul>
+</div>
+
+<div data-role="view" id="drawer-deleted" data-layout="drawer-layout" data-title="Deleted Items">
+    <ul data-role="listview">
+        <li data-icon="trash">Untitled message 4</li>
+        <li data-icon="trash">Untitled message 5</li>
+    </ul>
+</div>
+
+<div data-role="view" id="drawer-spam" data-layout="drawer-layout" data-title="Spam">
+    <ul data-role="listview">
+        <li>90% Discount!</li>
+        <li>90% Discount!</li>
+        <li>One time offer!</li>
+    </ul>
+    <a data-role="button" style="background-color: darkred; display: block; margin: 2em; font-size: 1.4em;">Delete Spam</a>
+</div>
+
+<div data-role="drawer" id="my-drawer">
+    <ul data-role="listview" data-type="group">
+        <li>Welcome Tan Run Yan
+            <ul>
+                <li data-icon="personal_details"><a href="#drawer-home" data-transition="none">Personal Details</a></li>
+                <li data-icon="new_claims"><a href="#add_claim.html" data-transition="none">Add New Claim</a></li>
+                <li data-icon="view_claims"><a href="#drawer-drafts" data-transition="none">View Claims</a></li>
+                <li data-icon="help"><a href="#drawer-sent" data-transition="none">Help</a></li>
+                <li data-icon="logout"><a href="#drawer-deleted" data-transition="none">Logout</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div data-role="layout" data-id="drawer-layout">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a data-role="button" data-rel="drawer" href="#my-drawer" data-icon="drawer-button" data-align="left"></a>
+            <span data-role="view-title"></span>
+        </div>
+    </header>
+</div>
+
+<script>
+    // reset global drawer instance, for demo purposes
+    kendo.mobile.ui.Drawer.current = null;
+</script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/kendo.all.min.js"></script>
+<script>
+new kendo.mobile.Application();
+</script>
+</body>
+</html>

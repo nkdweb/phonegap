@@ -1,0 +1,251 @@
+/* Custom CSS goes here */
+
+ @font-face {
+    font-family: 'HelveticaNL';
+    src: url('../fonts/helvetica_neue/Helvetica-LT-45-Light.eot');
+    src: url('../fonts/helvetica_neue/Helvetica-LT-45-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helvetica_neue/Helvetica-LT-45-Light.woff') format('woff'),
+         url('../fonts/helvetica_neue/Helvetica-LT-45-Light.ttf') format('truetype'),
+         url('../fonts/helvetica_neue/HelveticaNeueLight.svg#helvetica_neue') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* go on with normal style definitions */
+body { 
+  font-family: HelveticaNL, sans-serif;
+  font-weight: normal;
+}
+.km-ios, .km-ios .km-content, .km-android, .km-android .km-content {
+    background:none;
+    color: #000000;
+	font-family: HelveticaNL;
+	font-weight: normal;
+}
+#home{
+    background:#0058a0;
+    color: #000000;
+	font-family: HelveticaNL;
+}
+#profile{
+    background:#E2E2E2;
+    color: #000000;
+}
+#appslogo{
+	margin-top:6%;
+	height:164px;
+	background:url('../images/logo.png') no-repeat center center;
+	width:100%;
+}
+div.login_section{
+	margin: 0 auto;
+    text-align:center;
+}
+.login_msg{
+	color: #FFFFFF;
+    font-family: HelveticaNL;
+    font-size: 30px;	
+	margin-top: 43px;
+    margin-left: 3%;
+    text-align: left;
+}
+.login_form{
+	margin-top:30px;
+}
+#login_btn {
+	background:#3DAF2C;
+	box-shadow:none;
+	outline:none;
+	border-radius:3px;
+	height:80px;
+	width:93.5%;
+	padding:0px;
+}
+#login_btn span.km-text{
+	font-family: HelveticaNL;
+    font-size: 35px;
+	color: #FFFFFF;
+	position: relative;
+    top: 15%;
+}
+.app-textbox{
+	font-family: HelveticaNL;
+    font-size: 35px;
+	margin-bottom:30px;
+	height:80px;
+	border-radius:3px;
+	color: #999999;
+	width:93.5%;
+}
+div.footer_app{
+	background:#003E72;
+	font-family: HelveticaNL;
+    font-size: 28px;
+	color: #a2d5ff;
+	text-align:center;
+	height: 40px;
+    padding-top: 4px;
+}
+.km-ios .km-navbar, .km-header{
+    background: url('../images/header_bg.png') repeat-x; 
+	box-shadow:none;
+	height:86px;
+}
+.km-ios .km-view-title, .km-ios .km-dialog-title, .km-ios6 .km-view-title{
+	box-shadow:none;
+	font-size: 30px;
+	font-family: HelveticaNL;
+	line-height: 3em;
+	font-weight:normal;
+}
+li.detail-lbl, li.detail-value{
+	list-style-type:none;
+	text-indent:20px;	
+	background:#FFFFFF;
+}
+.km-ios .km-list > li.detail-lbl{
+	border-bottom:solid #b6b6b6 1px;
+	font-size:20px;
+	font-family: HelveticaNL;
+	color:#666666;
+	padding:10px 0px;
+}
+.km-ios .km-list > li.detail-value{
+	font-size:28px;
+	font-family: HelveticaNL;
+	color:#333333;
+	padding:20px 0px;
+}
+ul.pdetails{
+	border:solid #b6b6b6 1px;
+	margin:3%;
+	padding:0px;
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-radius:3px;
+}
+.km-ios .km-list > li{
+	background:#FFFFFF;
+}
+#detail-list{
+	border:solid red 1px;
+	overflow:auto;
+	height:450px;
+}
+.km-ios6 *:not(.km-tabstrip):not(.km-buttongroup) > .km-button {
+	background:url('../images/drawer/menu.png') no-repeat;
+	border:none;
+	height: 77px;
+    width: 62px;
+	border-radius:none;
+	box-shadow: none;
+	margin-left: -6px;
+}
+/*.km-ios .km-toolbar, .km-ios .km-navbar, .km-ios .km-button, .km-ios .km-tabstrip, .km-ios .km-popup .k-item, .km-ios .km-actionsheet > li > a {
+	background:url('../images/menu.png') no-repeat;
+	border:none;
+}*/
+div.km-navbar div.km-leftitem a.km-button span.km-icon{
+	display:none;
+}
+.km-ios #my-drawer .km-group-title, .km-blackberry #my-drawer .km-group-title {
+	background-color:#333333;
+}
+.km-ios #my-drawer .km-content, .km-android #my-drawer .km-content, .km-blackberry #my-drawer .km-content, .km-ios #my-drawer .km-list > li, .km-android #my-drawer .km-list > li, .km-blackberry #my-drawer .km-list > li, .km-ios #my-drawer .km-listview-link > .km-icon, .km-android #my-drawer .km-listview-link > .km-icon, .km-blackberry #my-drawer .km-listview-link > .km-icon, .km-ios #my-drawer .km-list li > .km-icon, .km-android #my-drawer .km-list li > .km-icon, .km-blackberry #my-drawer .km-list li > .km-icon {
+	background:#333333;
+}
+.km-ios .km-group-title {
+	background-image:none;
+}
+ul.km-list li a{
+	color:#999999;
+	font-size:28px;
+	font-family: HelveticaNL;
+	font-weight: normal;
+}
+.km-drawer, [data-role="drawer"] {
+    left: auto;
+    top: 0;
+    width: 560px;
+}
+.km-group-title .km-text{
+	color:#FFFFFF;
+	font-size:28px;
+	font-family: HelveticaNL;
+	font-weight: normal;
+	padding:25px 37px;
+	border-bottom: solid 1px #777777;
+}
+.km-listview-link:after {
+	border:none;
+}
+div#my-drawer.km-view div.km-content div.km-scroll-container div.km-listview-wrapper ul.km-listview li.km-group-container ul.km-list li a.km-listview-link span.km-icon .km-personal_details{
+	background:url('../images/drawer/personal_details.png') no-repeat;
+}
+div#drawer-home.km-view div.km-content{
+	background:#E2E2E2;
+}
+.km-root .km-listview-link, .km-root .km-listview-label {
+    line-height: inherit;
+    margin: 0.1em -0.7em;
+    text-decoration: none;
+}
+span.title_name{
+	font-size:30px;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+.sub_title{
+	background: none repeat scroll 0 0 #268EE3;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: normal;
+    height: 40px;
+    padding-top: 5px;
+    text-indent: 20px;
+}
+.km-ios .km-list input[type="text"].claim_txt,.km-ios .km-list textarea {
+	font-family: HelveticaNL;
+    font-size: 35px;
+	border-radius:3px;
+	color: #999999;
+	width:100%;
+}
+
+
+.km-ios .km-list > li.claim-lbl{
+    color: #666666;
+    font-family: HelveticaNL;
+    font-size: 20px;
+    padding: 10px;
+	font-weight: normal;
+}
+#exp_receipt{
+	background:#3DAF2C;
+	box-shadow:none;
+	outline:none;
+	border-radius:3px;
+	height:80px;
+	width:96%;
+	padding:0px;
+	margin:0 2%;
+}
+#exp_receipt span.km-text {
+    color: #FFFFFF;
+    font-family: HelveticaNL;
+    font-size: 35px;
+    position: relative;
+    top: 15%;
+}
+.km-ios .km-list > li.claim-value {
+    color: #333333;
+    font-family: HelveticaNL;
+    font-size: 28px;
+    height: 86px;
+    padding: 20px;
+	font-weight: normal;
+}
+p.disclaimer{
+	border-bottom: 1px solid #8A8A8A;
+    font-family: HelveticaNL;
+    font-size: 26px;
+    padding: 0 0 12px;
+}
